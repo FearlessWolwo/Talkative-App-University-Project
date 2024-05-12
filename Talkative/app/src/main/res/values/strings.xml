@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Talkative</string>
+    <string name="username">Felhasználónév</string>
+    <string name="password">Jelszó</string>
+    <string name="login">Bejelentkezés</string>
+    <string name="registration">Regisztráció</string>
+    <string name="repeat_password">Jelszó ismétlése</string>
+    <string name="back">Vissza</string>
+    <string name="email">E-mail cím</string>
+    <string name="search">search</string>
+    <string name="profile">profile</string>
+    <string name="requests">requests</string>
+    <string name="logout">Kijelentkezés</string>
+    <string name="editProfile"><b>Profil szerkeztése</b></string>
+    <string name="new_password">Új jelszó</string>
+    <string name="new_password_again">Új jelszó újra</string>
+    <string name="cancel">Mégse</string>
+    <string name="save">Mentés</string>
+    <string name="add">Barátjelölés küldése</string>
+    <string name="addFriend">Add meg a barátod email címét</string>
+    <string name="send">Küldés</string>
+    <string name="incoming_requests">Bejövő jelölések</string>
+    <string name="accept">Elfogadás</string>
+    <string name="delete">Törlés</string>
+    <string name="deleteFriend">Barát törlése</string>
+    <string name="send_message">Üzenet küldése</string>
+</resources>

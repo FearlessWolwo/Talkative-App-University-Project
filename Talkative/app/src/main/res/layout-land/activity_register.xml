@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <EditText
+        android:id="@+id/usernameET"
+        android:layout_width="290dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:hint="@string/username"
+        android:inputType="text"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.125" />
+
+    <EditText
+        android:id="@+id/emailET"
+        android:layout_width="290dp"
+        android:layout_height="35dp"
+        android:textSize="10sp"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/usernameET"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <EditText
+        android:id="@+id/passwordET"
+        android:layout_width="290dp"
+        android:layout_height="35dp"
+        android:textSize="10sp"
+        android:layout_marginBottom="150dp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailET"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <EditText
+        android:id="@+id/repeatPasswordET"
+        android:layout_width="290dp"
+        android:layout_height="35dp"
+        android:textSize="10sp"
+        android:layout_marginBottom="150dp"
+        android:ems="10"
+        android:hint="@string/repeat_password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordET"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/repeatPasswordET"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/repeatPasswordET">
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:textSize="10sp"
+            android:onClick="cancel"
+            android:text="@string/back"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.157" />
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:textSize="10sp"
+            android:onClick="register"
+            android:text="@string/registration"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.157" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/registerTV"
+        android:layout_width="167dp"
+        android:layout_height="18dp"
+        android:text="@string/registration"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/usernameET"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.551" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/profile"
+        android:title="@string/profile"
+        android:icon="@drawable/ic_profile"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/requests"
+        android:title="@string/requests"
+        android:icon="@drawable/ic_friend"
+        app:showAsAction="always"
+        android:actionLayout="@layout/friend_menu_item"/>
+    <item
+        android:id="@+id/logout"
+        android:title="@string/logout"
+        android:icon="@drawable/ic_logout"
+        app:showAsAction="always"/>
+</menu>

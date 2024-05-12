@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/editProfileTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/editProfile"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/usernameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textSize="12sp"
+        android:text="@string/username"
+        app:layout_constraintEnd_toStartOf="@+id/usernameET"
+        app:layout_constraintHorizontal_bias="0.678"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editProfileTV" />
+
+    <EditText
+        android:id="@+id/usernameET"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.646"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editProfileTV" />
+
+    <TextView
+        android:id="@+id/passwordTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_marginTop="12dp"
+        android:text="@string/password"
+        app:layout_constraintEnd_toStartOf="@+id/passwordET"
+        app:layout_constraintHorizontal_bias="0.738"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernameET" />
+
+    <EditText
+        android:id="@+id/passwordET"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.646"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernameET" />
+
+    <TextView
+        android:id="@+id/newPasswordTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_marginTop="12dp"
+        android:text="@string/new_password"
+        app:layout_constraintEnd_toStartOf="@+id/newPasswordET"
+        app:layout_constraintHorizontal_bias="0.727"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordET" />
+
+    <EditText
+        android:id="@+id/newPasswordET"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.646"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordET" />
+
+    <TextView
+        android:id="@+id/newPasswordAgainTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_marginTop="12dp"
+        android:text="@string/new_password_again"
+        app:layout_constraintEnd_toStartOf="@+id/newPasswordAgainET"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newPasswordET" />
+
+    <EditText
+        android:id="@+id/newPasswordAgainET"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.646"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newPasswordET" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:textSize="14sp"
+        android:text="@string/cancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.291"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newPasswordAgainET"
+        android:onClick="cancel"/>
+
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:textSize="14sp"
+        android:text="@string/save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.411"
+        app:layout_constraintStart_toEndOf="@+id/cancelButton"
+        app:layout_constraintTop_toBottomOf="@+id/newPasswordAgainET"
+        android:onClick="update"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
